@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:100,300,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,500,600,700');
+
+ *{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+
+
+/** Base Styles **/
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px;
+    height: 100%;
+}
+.main-text h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+p, a {
+    font-size: 16px;
+}
+.hr {
+    height: 1px;
+    background-color: rgba(7, 4, 56, 0.2);
+    margin-top: 60px;
+}
+
+
+/************************************************* Header ***************************************************/
+.header {
+    background-color: #222; 
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+.header .navbar {
+    margin-bottom: 0;
+}
+.header .navbar #brand{
+    color: cornsilk;
+    font-family: cursive;
+    font-size: 24px;
+    font-style: italic;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+ul.nav {
+    margin-top: 12px;
+}
+ul.nav li a {
+    text-decoration: none;
+    color: #bbb;
+    font-weight: 300;
+}
+
+ul.nav li a.active, ul.nav li a:hover, ul.nav li a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-toggle {
+    color: #FFF;
+    font-size: 28px;
+    margin: 3px;
+    padding: 2px 5px;
+    margin-top: 20px;
+    line-height: 32px;
+}
+.navbar-toggle:hover {
+    background-color: #D8B5B5;
+}
+
+
+/*********************************************** About Me section ***********************************************/
+.main {
+    background-color: #07033A;
+    height: 600px;
+}
+.main-text h1, #about h3, #portfolio h2{
+    text-align: center;
+    font-weight: 600;
+}
+.main-text {
+    position: relative;
+    color: #fff;
+}
+
+@media (min-width: 100px){
+    .main-text {
+        top: 120px;
+    }
+    .main h1 {
+        font-size: 3.5rem;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 415px) {
+    .main-text {
+        top: 100px;
+    }  
+    .main h1 {
+        font-size: 3.85rem;
+        line-height: 1.5;
+    }
+}
+@media (min-width:678px) {
+    .main-text {
+        top: 220px;
+    }
+    .main h1 {
+        font-size: 4rem;
+        line-height: 1.5;
+    }
+}
+
+/** More info about me **/
+
+#about, #portfolio, #contact, footer {
+    padding: 100px 0;
+}
+#about{
+    text-align: center;
+}
+#about h3, #portfolio h3 {
+    font-size: 30px;
+    color: #080438;
+    margin-bottom: 20px;
+}
+#about p {
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: center;
+}
+#about [class*='fa fa']{
+    font-size: 4em;
+    color:#4947CE;
+}
+@media (max-width:768px){
+    #about .moreInfo{
+        padding: 20px 20px 30px 30px;;
+    }
+}
+
+
+/***************************************** Portfolio section*******************************************/
+#portfolio {
+    background-color: #eee;
+    margin-top: 50px;
+}
+#portfolio h2 {
+    color: #080438;
+    margin: 30px 0 40px;
+    text-transform: uppercase;
+}
+#portfolio h3 {
+    margin-top: 40px !important;
+}
+#portfolio h4 {
+    color: #4947CE;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 0 15px;
+    margin-top: 0;
+}
+#portfolio p, #contact p {
+    font-weight: 300;
+}
+
+#portfolio img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/*********************************************** Contact section *************************************************/
+#contact {
+    background-color: #4947CE;
+    text-align: center;
+}
+#contact p {
+    color:white;
+    line-height: 1.7em;
+}
+#contact a {
+    font-size: 24px;
+    color: #FFD900;
+    text-decoration: none;
+}
+
+@media (min-width: 100px){
+
+      #contact p, #contact a {
+          font-size: 19px;
+      }
+  }  
+@media (min-width: 351px){
+    #contact p, #contact a{
+        font-size: 20px;
+    }
+}
+@media (min-width: 467px) {
+    #contact p, #contact a {
+        font-size: 21px;
+    }
+}
+@media (min-width:552px) {
+    #contact p, #contact a {
+        font-size: 23px;
+    }
+}
+@media (min-width:610px) {
+    #contact p {
+        margin-top: 20px;
+    }
+    #contact p, #contact a {
+        font-size: 24px;
+    }
+}
+
+
+/********************************************** Footer *************************************************/
+footer {
+    background-color: #222; 
+    padding-bottom: 50px;
+}
+
+.footer-text {
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+.footer-text p {
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+/** social media **/
+.social [class*="fa fa-"] {
+    background-color: #333;
+    color: #fff;
+    border-radius: 30px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 30px 3px;
+    text-align: center;
+}
+.social [class*="fa-fa-"]:hover {
+    border-style: transparent;
+}
+.social [class*='linkedin']:hover {
+    background-color: #0077b5;
+}
+.social [class*='github']:hover {
+    background-color: #c9510c;
+}
+.social [class*='twitter']:hover {
+    background-color: #1da1f2;
+}
+.social [class*='medium']:hover {
+    background-color: #3cb371;
+}
+.social [class*='code-camp']:hover {
+    background-color: #ff4025;
+}
