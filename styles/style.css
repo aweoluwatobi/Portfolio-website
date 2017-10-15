@@ -1,22 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:100,300,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,500,600,700');
 
+
+/** Base Styles **/
  *{
      box-sizing: border-box;
      padding: 0;
      margin: 0;
  }
-
-
-/** Base Styles **/
 body {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 16px;
     height: 100%;
-}
-.main-text h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
 }
 p, a {
     font-size: 16px;
@@ -79,15 +74,18 @@ ul.nav li a.active, ul.nav li a:hover, ul.nav li a:focus {
     background-color: #07033A;
     height: 600px;
 }
-.main-text h1, #about h3, #portfolio h2{
-    text-align: center;
-    font-weight: 600;
-}
 .main-text {
     position: relative;
     color: #fff;
 }
-
+.main-text h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+.main-text h1, #about h3, #portfolio h2{
+    text-align: center;
+    font-weight: 600;
+}
 @media (min-width: 100px){
     .main-text {
         top: 120px;
