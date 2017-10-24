@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:100,300,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 
 /** Base Styles **/
  *{
      box-sizing: border-box;
-     padding: 0;
-     margin: 0;
  }
+html {
+    padding: 0;
+    margin: 0;
+}
 body {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 16px;
@@ -16,34 +19,25 @@ body {
 p, a {
     font-size: 16px;
 }
-.hr {
-    height: 1px;
-    background-color: rgba(7, 4, 56, 0.2);
-    margin-top: 60px;
-}
-
-
-/************************************************* Header ***************************************************/
-.header {
-    background-color: #222; 
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
-}
-.header .navbar {
-    margin-bottom: 0;
-}
-.header .navbar #brand{
-    color: cornsilk;
-    font-family: cursive;
-    font-size: 24px;
-    font-style: italic;
-    margin: 10px 0;
+a {
     text-decoration: none;
 }
+/************************************************* Header ***************************************************/
 
-ul.nav {
+
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-inverse {
+    border-color: transparent !important;
+}
+.navbar #brand{
+    color: cornsilk;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    line-height: 1.6;
+}
+.navbar ul.nav {
     margin-top: 12px;
 }
 ul.nav li a {
@@ -56,19 +50,17 @@ ul.nav li a.active, ul.nav li a:hover, ul.nav li a:focus {
     color: #fff;
     background-color: transparent;
 }
-.navbar-toggle {
+.navbar .navbar-toggle {
     color: #FFF;
-    font-size: 28px;
-    margin: 3px;
-    padding: 2px 5px;
-    margin-top: 20px;
+    font-size: 25px;
+    padding: 5px 10px;
+    margin-top: 15px;
     line-height: 32px;
 }
-.navbar-toggle:hover {
-    background-color: #D8B5B5;
+
+.navbar-collapse {
+    position: relative;
 }
-
-
 /*********************************************** About Me section ***********************************************/
 .main {
     background-color: #07033A;
@@ -95,7 +87,6 @@ ul.nav li a.active, ul.nav li a:hover, ul.nav li a:focus {
         line-height: 1.4;
     }
 }
-
 @media (min-width: 415px) {
     .main-text {
         top: 100px;
