@@ -14,7 +14,6 @@ html {
 body {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 16px;
-    height: 100%;
 }
 p, a {
     font-size: 16px;
@@ -80,29 +79,51 @@ ul.nav li a.active, ul.nav li a:hover, ul.nav li a:focus {
 }
 @media (min-width: 100px){
     .main-text {
-        top: 120px;
+        top: 130px;
     }
     .main h1 {
-        font-size: 3.5rem;
+        font-size: 3.1rem;
         line-height: 1.4;
     }
 }
-@media (min-width: 415px) {
+@media (min-width: 320px){
     .main-text {
-        top: 100px;
+        top: 150px;
+    }
+    .main h1 {
+        font-size: 3.385rem;
+    }
+}
+@media (min-width: 430px) {
+    .main-text {
+        top: 150px;
     }  
     .main h1 {
         font-size: 3.85rem;
         line-height: 1.5;
     }
 }
+@media (min-width: 500px) {
+    .main-text {
+        top: 170px;
+    }
+}
 @media (min-width:678px) {
     .main-text {
-        top: 220px;
+        top: 185px;
     }
     .main h1 {
         font-size: 4rem;
         line-height: 1.5;
+    }
+}
+@media (min-width:1200px) {
+    .main-text {
+        top: 220px;
+    }
+    .main h1 {
+        font-size: 4.2rem;
+        line-height: 1.7;
     }
 }
 
@@ -130,7 +151,7 @@ ul.nav li a.active, ul.nav li a:hover, ul.nav li a:focus {
 }
 @media (max-width:768px){
     #about .moreInfo{
-        padding: 20px 20px 30px 30px;;
+        padding: 20px 30px 20px 30px;
     }
 }
 
