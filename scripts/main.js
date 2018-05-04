@@ -1,4 +1,4 @@
-$(document).on('click', '.nav li a', function(event){
+$('.nav li a').on('click', function(event){
     event.preventDefault();
 
     $('html, body').animate({
@@ -6,9 +6,7 @@ $(document).on('click', '.nav li a', function(event){
     }, 500);
 });
 
-$('nav li a').on('click', function(event){
-    $(".nav li a").removeClass("active");
+$('nav li a').removeClass("active");
     $(this).addClass("active");
-})
 
 
